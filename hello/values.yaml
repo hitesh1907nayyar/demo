@@ -13,11 +13,11 @@ nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: ClusterIP 
-  port: 3005
+  type: LoadBalancer
+  port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
