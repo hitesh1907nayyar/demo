@@ -13,7 +13,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: LoadBalancerIP 
+  type: LoadBalancer 
   port: 42002
 
 ingress:
