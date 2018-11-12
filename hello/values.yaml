@@ -13,8 +13,8 @@ nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: LoadBalancer
-  port: 4202
+  type: ClusterIP
+  port: 42002
 
 ingress:
   enabled: false
