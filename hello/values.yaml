@@ -13,7 +13,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 3000
 
 ingress:
@@ -23,7 +23,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - hello.192.168.99.100.nip.io
+    - hello.52.11.80.175.nip.io
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
