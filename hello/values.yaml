@@ -14,7 +14,7 @@ fullnameOverride: ""
 
 service:
   type: LoadBalancer 
-  port: 42001
+  port: 5000
 
 ingress:
   enabled: false
