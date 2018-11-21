@@ -18,13 +18,7 @@ podTemplate(
             name: 'helm', 
             image: 'ibmcom/k8s-helm:v2.6.0',
             ttyEnabled: true,
-            command: 'cat'
-        )
-    ],
-    volumes: [
-        hostPathVolume(
-            hostPath: '/var/run/docker.sock',
-            mountPath: '/var/run/docker.sock'
+            command: 'cat'`
         )
     ]
 ) {
@@ -37,6 +31,7 @@ podTemplate(
         stage ('Build') {
             container ('golang') {
                 sh 'CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .'
+				sh 'ls -ltr'
             }
         }
         def repository
