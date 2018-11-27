@@ -14,7 +14,7 @@ fullnameOverride: ""
 
 service:
   type: LoadBalancer 
-  port: 3063
+  port: 3064
 
 ingress:
   enabled: false
